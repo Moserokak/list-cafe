@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#163b32" />
+    <meta name="description" content="Лист — уютная кофейня с хорошим кофе, свежей выпечкой и временем для себя." />
+    <title>Лист — кофейня для вашего дня</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Перейти к содержимому</a>
+
+    <header class="site-header" id="top">
+      <div class="container header-inner">
+        <a class="brand" href="#top" aria-label="Лист — на главную">
+          <span class="brand-mark" aria-hidden="true">✳</span>
+          <span>лист<span class="brand-dot">.</span></span>
+        </a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Открыть меню">
+          <span></span><span></span><span></span>
+        </button>
+        <nav class="site-nav" id="site-nav" aria-label="Основная навигация">
+          <a href="#about">О кофейне</a>
+          <a href="#menu">Меню</a>
+          <a href="#moments">Атмосфера</a>
+          <a class="nav-cta" href="#menu">Выбрать кофе</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-image" role="img" aria-label="Уютная кофейня с чашкой капучино на столе"></div>
+        <div class="hero-shade"></div>
+        <div class="container hero-content">
+          <p class="eyebrow hero-eyebrow">Кофе. Встречи. Пауза.</p>
+          <h1 id="hero-title">У каждого дня<br />есть свой <em>вкус.</em></h1>
+          <p class="hero-lead">Загляните за любимым кофе, свежим десертом и маленьким моментом спокойствия.</p>
+          <div class="hero-actions">
+            <a class="button button-light" href="#menu">Смотреть меню</a>
+            <a class="text-link" href="#about">Узнать о нас <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+        <div class="hero-caption">Ваше место для приятной паузы</div>
+      </section>
+
+      <section class="intro section" id="about" aria-labelledby="about-title">
+        <div class="container intro-grid">
+          <div>
+            <p class="eyebrow">Немного о нас</p>
+            <h2 id="about-title">Место, куда хочется <em>вернуться.</em></h2>
+          </div>
+          <div class="intro-copy">
+            <p>«Лист» — идея кофейни, где можно замедлиться: начать утро с ароматного напитка, встретиться с друзьями или просто побыть наедине с собой.</p>
+            <p>В центре нашего меню — понятные любимые вкусы, приготовленные с вниманием к деталям.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="menu-section section" id="menu" aria-labelledby="menu-title">
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Что попробовать</p>
+              <h2 id="menu-title">Меню для <em>любого настроения.</em></h2>
+            </div>
+            <p>Классика, которая всегда кстати, и сладкое дополнение к вашему дню.</p>
+          </div>
+          <div class="filters" role="group" aria-label="Фильтр меню">
+            <button class="filter is-active" type="button" data-filter="all" aria-pressed="true">Всё меню</button>
+            <button class="filter" type="button" data-filter="coffee" aria-pressed="false">Кофе</button>
+            <button class="filter" type="button" data-filter="dessert" aria-pressed="false">Десерты</button>
+          </div>
+          <div class="menu-grid">
+            <article class="menu-card" data-category="coffee">
+              <div class="menu-card-icon coffee-icon" aria-hidden="true">☕</div>
+              <div><span class="menu-kind">Кофе</span><h3>Капучино</h3><p>Эспрессо, молоко и нежная пенка — знакомый вкус для любого момента.</p></div>
+            </article>
+            <article class="menu-card" data-category="coffee">
+              <div class="menu-card-icon coffee-icon" aria-hidden="true">◉</div>
+              <div><span class="menu-kind">Кофе</span><h3>Латте</h3><p>Мягкий и сливочный напиток, с которым легко задержаться подольше.</p></div>
+            </article>
+            <article class="menu-card" data-category="coffee">
+              <div class="menu-card-icon coffee-icon" aria-hidden="true">✦</div>
+              <div><span class="menu-kind">Кофе</span><h3>Американо</h3><p>Насыщенный кофе с чистым вкусом для тех, кто любит классику.</p></div>
+            </article>
+            <article class="menu-card" data-category="dessert">
+              <div class="menu-card-icon dessert-icon" aria-hidden="true">✿</div>
+              <div><span class="menu-kind">Десерт</span><h3>Морковный торт</h3><p>Пряный бисквит и лёгкий крем — уютное дополнение к чашке кофе.</p></div>
+            </article>
+            <article class="menu-card" data-category="dessert">
+              <div class="menu-card-icon dessert-icon" aria-hidden="true">♡</div>
+              <div><span class="menu-kind">Десерт</span><h3>Чизкейк</h3><p>Нежная текстура и спокойная сладость для неспешного разговора.</p></div>
+            </article>
+            <article class="menu-card" data-category="dessert">
+              <div class="menu-card-icon dessert-icon" aria-hidden="true">✳</div>
+              <div><span class="menu-kind">Десерт</span><h3>Круассан</h3><p>Слоёный, хрустящий и особенно хорош с утренним напитком.</p></div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="moment-section section" id="moments" aria-labelledby="moment-title">
+        <div class="container moment-grid">
+          <div class="moment-art" aria-hidden="true"><span class="art-circle"></span><span class="art-cup">☕</span><span class="art-note">take a moment</span></div>
+          <div class="moment-copy">
+            <p class="eyebrow">Наше настроение</p>
+            <h2 id="moment-title">Иногда достаточно <em>одной чашки.</em></h2>
+            <p>Кофейня — это больше, чем напиток. Это место для разговора, любимой книги и короткой передышки среди большого дня.</p>
+            <a class="button button-dark" href="#menu">Найти свой вкус</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div><a class="brand footer-brand" href="#top"><span class="brand-mark" aria-hidden="true">✳</span><span>лист<span class="brand-dot">.</span></span></a><p>Кофе для моментов, которые хочется сохранить.</p></div>
+        <div class="footer-right"><a href="#top">Наверх ↑</a><small>Демонстрационный сайт кофейни · <span id="year"></span></small></div>
+      </div>
+    </footer>
+  </body>
+</html>
